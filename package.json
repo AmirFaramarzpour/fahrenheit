@@ -1,6 +1,10 @@
 {
   "name": "vite-react-typescript-starter",
+<<<<<<< HEAD
   "homepage": "https://www.fahrenheitcafe.ir/",
+=======
+  "homepage": "https://www.fahrenheitcafe.ir",
+>>>>>>> e169ee91e7eca45856964b7f0f4dde441fcee6cb
   "private": true,
   "version": "0.0.0",
   "type": "module",
