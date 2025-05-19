@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+  
+    <title>Fahrenheit Cafe Menu</title>
+    <style>
+      /* Popup container */
+      #popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none; /* Initially hidden */
+        padding: 20px;
+        z-index: 1001;
+      }
+
+      /* Overlay behind popup */
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none; /* Initially hidden */
+        z-index: 1000;
+      }
+
+      /* Close button */
+      .close-btn {
+        background: #f44336;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .close-btn:hover {
+        background: #d32f2f;
+      }
+
+      /* Popup content styles */
+      #popup img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      #popup h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #popup p {
+        font-family: 'Changa', sans-serif;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CqIHY9TR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKft8B_R.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Popup -->
+    <div id="popup" style="width: 300px; background: #fff; border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px;">
+      <img src="https://ik.imagekit.io/amirfaramarzpour/IMG_4073.JPG?updatedAt=1745277306946" alt="Special Offer" style="width: 100%; border-radius: 5px;">
+      <h2 style="text-align: center;">✧Seasonal Special✧</h2>
+      <h3 style="text-align: justify;"></h3>
+      <p style="text-align: justify;"></p>
+      <button class="close-btn" onclick="closePopup()" style="background-color: #f44336; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; text-align: center; display: block; margin: 10px auto;">Close</button>
+    </div>
+    
+
+
+    <!-- Script for popup functionality -->
+    <script>
+      // Show popup on page load
+      window.onload = function() {
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      };
+
+      // Close popup function
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
